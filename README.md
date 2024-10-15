@@ -66,22 +66,20 @@ The dataset is saved to an SQLite database, allowing for SQL queries to be run o
 # Connect to the SQLite database
 conn = sqlite3.connect('credit_card_data.db')
 ```
-
-```python```
-# Write a query
-
-```query = '''
-SELECT 
-    `Customer ID`, 
-    `Fraudulent`, 
-    COUNT(*) AS Fraud_Count, 
-    SUM(`Transaction Amount`) AS Total_Transaction_Amount 
-FROM 
-    CreditCardTransactions 
-GROUP BY 
-    `Customer ID`, `Fraudulent`
-HAVING `Fraudulent` = 1
-ORDER BY `Fraudulent` desc, `Fraud_Count` desc, `Total_Transaction_Amount` desc, `Customer ID`;
+Write a query 
+```python
+query = '''
+    SELECT 
+        `Customer ID`, 
+        `Fraudulent`, 
+        COUNT(*) AS Fraud_Count, 
+        SUM(`Transaction Amount`) AS Total_Transaction_Amount 
+    FROM 
+        CreditCardTransactions 
+    GROUP BY 
+        `Customer ID`, `Fraudulent`
+    HAVING `Fraudulent` = 1
+    ORDER BY `Fraudulent` desc, `Fraud_Count` desc, `Total_Transaction_Amount` desc, `Customer ID`;
 '''
 ```
 Then transform and visualize the output using matplotlib
