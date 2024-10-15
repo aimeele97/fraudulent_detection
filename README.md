@@ -49,9 +49,8 @@ The project includes detailed analysis of the dataset to identify patterns and i
 
 ### Sample Visualization
 
-```python
-plot_fraud_data(fraud_type, 'Transaction Type', 'Count', 'Total_Amount', 'Transaction Count and Total Amount by Type')
-```
+<img width="370" alt="image" src="https://github.com/user-attachments/assets/ecb38387-dbd0-45f9-b474-4605455b3ee7">
+<img width="367" alt="image" src="https://github.com/user-attachments/assets/9e638501-2813-42c3-bf4f-55acf888f1d9">
 
 ## Mapping Fraudulent Transactions
 
@@ -67,6 +66,9 @@ The dataset is saved to an SQLite database, allowing for SQL queries to be run o
 # Connect to the SQLite database
 conn = sqlite3.connect('credit_card_data.db')
 ```
+Then transform and visualize the output using matplotlib
+
+<img width="411" alt="image" src="https://github.com/user-attachments/assets/850968fe-7dfa-43ef-8e63-aa2fc049c625">
 
 ## Installation
 
