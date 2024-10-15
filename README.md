@@ -68,7 +68,7 @@ conn = sqlite3.connect('credit_card_data.db')
 ```
 Then transform and visualize the output using matplotlib
 
-<img width="411" alt="image" src="https://github.com/user-attachments/assets/850968fe-7dfa-43ef-8e63-aa2fc049c625">
+<img width="540" alt="image" src="https://github.com/user-attachments/assets/850968fe-7dfa-43ef-8e63-aa2fc049c625">
 
 ## Installation
 
