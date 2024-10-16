@@ -3,6 +3,7 @@
 ## Overview
 
 This project focuses on the detection of fraudulent transactions in credit card data using Python. A synthetic dataset is generated to simulate various credit card transactions, including details such as transaction ID, customer ID, transaction date, amount, type, merchant category, location, and whether the transaction is fraudulent.
+The goal is to identify patterns and relationships in the data and build a predictive model that can accurately classify transactions as fraudulent or non-fraudulent.
 
 ## Dataset Generation
 
@@ -86,6 +87,15 @@ Then transform and visualize the output using matplotlib
 
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/850968fe-7dfa-43ef-8e63-aa2fc049c625">
 
+## Machine Learning Models
+For this project, three different models were trained to classify fraudulent transactions: Logistic Regression, Random Forest, and Gradient Boosting. The models were evaluated using accuracy, and all achieved a high accuracy of 95%.
+
+| Model               | Accuracy |
+|---------------------|----------|
+| Logistic Regression | 95%      |
+| Random Forest       | 95%      |
+| Gradient Boosting   | 95%      |
+
 ## Installation
 
 Ensure you have the required libraries installed. You can install them using pip:
@@ -101,6 +111,14 @@ Run the notebook to generate the dataset, perform exploratory data analysis, and
 ## Conclusion
 
 This project demonstrates the steps involved in detecting fraudulent transactions using synthetic data, including data generation, exploration, analysis, visualization, and storage in a database.
+
+Logistic Regression, Random Forest, and Gradient Boosting models were trained and achieved similar high accuracy of 95%.Feature importance analysis provided actionable insights, which can be used to improve future models and support business decision-making.
+
+### Next Steps
+
+1. Experiment with larger datasets or datasets from different sources to test the model’s robustness.
+2. Explore ensemble methods or hyperparameter tuning to improve the performance.
+3. Deploy the model and test it on real-time data to evaluate how it handles real-world fraud detection scenarios.
 
 ## License 
 
